@@ -1,0 +1,403 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: others today breathing
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: today_exam
+  - action: utter_video_type1_today
+  - intent: breathing_exercise
+  - action: utter_video_link_today_breath1
+
+- story: others today meditation
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: today_exam
+  - action: utter_video_type1_today
+  - intent: medi_exercise
+  - action: utter_video_link_today_meditation2
+
+- story: others tomorrow breathing
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: breathing_exercise
+  - action: utter_video_link_tomorrow_breath3
+
+- story: others tomorrow meditation
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: medi_exercise
+  - action: utter_video_link_tomorrow_medi4
+
+- story: others tomorrow memory
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: medi_exercise
+  - action: utter_video_link_tomorrow_memory5
+
+- story: others tomorrow affir
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: medi_exercise
+  - action: utter_video_link_tomorrow_affir6
+
+- story: others more timeplan
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: time_plan
+  - action: utter_video_link_more_timeplan7
+
+- story: others more studyplan
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: study_plan
+  - action: utter_video_link_more_studyplan8
+
+- story: others more memorytech
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: memory_exercise
+  - action: utter_video_link_more_memorytech9
+
+- story: others more affir
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: affir_exercise
+  - action: utter_video_link_more_affir10
+
+- story: qurr today breathing
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: today_exam
+  - action: utter_video_type1_today
+  - intent: breathing_exercise
+  - action: utter_video_link_today_breath1
+
+- story: qurr today meditation
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: today_exam
+  - action: utter_video_type1_today
+  - intent: medi_exercise
+  - action: utter_video_link_today_meditation2
+
+- story: qurr tomorrow breathing
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: breathing_exercise
+  - action: utter_video_link_tomorrow_breath3
+
+- story: qurr tomorrow meditation
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: medi_exercise
+  - action: utter_video_link_tomorrow_medi4
+
+- story: qurr tomorrow memory
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: medi_exercise
+  - action: utter_video_link_tomorrow_memory5
+
+- story: qurr tomorrow affir
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: medi_exercise
+  - action: utter_video_link_tomorrow_affir16
+
+- story: qurr more timeplan
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: time_plan
+  - action: utter_video_link_more_timeplan17
+
+- story: qurr more studyplan
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: study_plan
+  - action: utter_video_link_more_studyplan8
+
+- story: qurr more memorytech
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: memory_exercise
+  - action: utter_video_link_more_memorytech19
+
+- story: qurr more affir
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: affirm
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: affir_exercise
+  - action: utter_video_link_more_affir20
+
+- story: alone today breathing
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: deny
+  - action: utter_Exam_date
+  - intent: today_exam
+  - action: utter_video_type1_today
+  - intent: breathing_exercise
+  - action: utter_video_link_today_breath1
+
+- story: alone today meditation
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: deny
+  - action: utter_Exam_date
+  - intent: today_exam
+  - action: utter_video_type1_today
+  - intent: medi_exercise
+  - action: utter_video_link_today_meditation2
+
+- story: alone tomorrow breathing
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: deny
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: breathing_exercise
+  - action: utter_video_link_tomorrow_breath3
+
+- story: alone tomorrow meditation
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: deny
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: medi_exercise
+  - action: utter_video_link_tomorrow_medi4
+
+- story: alone tomorrow memory
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: deny
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: medi_exercise
+  - action: utter_video_link_tomorrow_memory5
+
+- story: alone tomorrow affir
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: deny
+  - action: utter_Exam_date
+  - intent: tomorrow_exam
+  - action: utter_video_type2_tomorrow
+  - intent: medi_exercise
+  - action: utter_video_link_tomorrow_affir6
+
+- story: alone more timeplan
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: deny
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: time_plan
+  - action: utter_video_link_more_timeplan17
+
+- story: alone more studyplan
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: deny
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: study_plan
+  - action: utter_video_link_more_studyplan28
+
+- story: alone more memorytech
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: deny
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: memory_exercise
+  - action: utter_video_link_tomorrow_memory5
+
+- story: alone more affir
+  steps:
+  - intent: affirm
+  - action: utter_being_with_others
+  - intent: deny
+  - action: utter_qurral_with_others
+  - intent: deny
+  - action: utter_Exam_date
+  - intent: more_days_exam
+  - action: utter_video_type3_moredays
+  - intent: affir_exercise
+  - action: utter_video_link_more_affir30
+
+
+

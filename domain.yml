@@ -1,0 +1,88 @@
+---
+version: "3.0"
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - today_exam
+  - tomorrow_exam
+  - more_days_exam
+  - breathing_exercise
+  - medi_exercise
+  - memory_exercise
+  - affir_exercise
+  - time_plan
+  - study_plan
+  - bot_challenge
+
+responses:
+  utter_greet:
+    - text: Hey! How are you?
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+    - text: Did that help you?
+  utter_happy:
+    - text: Great, carry on!
+  utter_goodbye:
+    - text: Bye
+  utter_iamabot:
+    - text: I am a bot, powered by Rasa.
+  utter_start:
+    - text: Hi, Nice to meet you. So, I understand that you were referred here by your exam. You have been feeling quite down recently. If you don't mind, can I ask some questions from you?
+  utter_being_with_others:
+    - text: Do you like to talk with others to share your feelings when you feel exam
+        fear?
+  utter_qurral_with_others:
+    - text: Are you getting angry with others when you feel exam fear?
+  utter_Exam_date:
+    - text: Can you please tell me when your exam will be held?
+  utter_video_type1_today:
+    - text: I will suggest some videos. Do you like to do meditation or breathing
+        exercises?
+  utter_video_type2_tomorrow:
+    - text: I will suggest some videos. Do you like to do meditation, breathing,memory techniques or motivation video?
+        exercises?
+  utter_video_type3_moredays:
+    - text: I will suggest some videos. Do you want to follow a time plan or study plan, memory technique or motivation video?
+  utter_video_link_today_breath1:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=odADwWzHR24'
+  utter_video_link_today_meditation2:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=J5lFGQk5zbE'
+  utter_video_link_tomorrow_breath3:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=Wemm-i6XHr8'
+  utter_video_link_tomorrow_medi4:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=m3-O7gPsQK0'
+  utter_video_link_tomorrow_memory5:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=0nFkQ4cQhME'
+  utter_video_link_tomorrow_affir6:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=BQcp1ZNWgTs'
+  utter_video_link_more_timeplan7:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=u7JrjopgBrc'
+  utter_video_link_more_studyplan8:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=ErsO3_-RQrs&t=138s'
+  utter_video_link_more_memorytech9:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=yFOGKCl1ccs'
+  utter_video_link_more_affir10:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=D24Oo0B5AN8'
+  utter_video_link_tomorrow_breath13:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=Wemm-i6XHr8'
+  utter_video_link_tomorrow_affir16:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=UbiWyPbAMIQ'
+  utter_video_link_more_timeplan17:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=qRE0WicGz4I'
+  utter_video_link_more_memorytech19:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=gDX6SGAgWZo'
+  utter_video_link_more_affir20:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=ZpHLtFXimLA'
+  utter_video_link_more_studyplan28:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=OzjLkjnpP10'
+  utter_video_link_more_affir30:
+    - text: 'This video might help you.Please follow the instructions and do it yourself: https://www.youtube.com/watch?v=-YOzx9IYdFY'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
